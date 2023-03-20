@@ -8,10 +8,10 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-  strategy:
-    matrix:
-      java:
-        [ '17' ]
+    strategy:
+      matrix:
+        java:
+          - '17'
     steps:
       - name: Checkout
         uses: actions/checkout@v3
